@@ -1,3 +1,6 @@
+### Install vagrant guest additions on the host OS
+vagrant plugin install vagrant-vbguest
+
 ### Install build essentials
 ```sh
 sudo yum -y install gcc make gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel perl-devel nfs-utils gettext
