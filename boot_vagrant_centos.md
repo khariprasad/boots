@@ -3,7 +3,7 @@ vagrant plugin install vagrant-vbguest
 
 ### Install build essentials
 ```sh
-sudo yum -y install gcc make gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel perl-devel nfs-utils gettext
+sudo yum -y install gcc make gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel perl-devel nfs-utils gettext enchant glib2-devel libxslt-devel libxml2-devel bzip2-devel
 ```
 
 ### Intial Vagrantfile
