@@ -1,6 +1,11 @@
 ### Install vagrant guest additions on the host OS
 vagrant plugin install vagrant-vbguest
 
+### Turn-off firewall if you have port-forwarding
+sudo chkconfig iptables off 
+sudo chkconfig --del iptables 
+sudo chkconfig --del ip6tables 
+
 ### Install build essentials
 ```sh
 sudo yum -y install gcc make gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel perl-devel nfs-utils gettext enchant glib2-devel libxslt-devel libxml2-devel bzip2-devel pcre pcre-devel
