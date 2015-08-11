@@ -20,3 +20,16 @@ cd git-2.5.0
 cmmi
 git --version
 ```
+
+### Goodies
+#### Dotfiles
+* Lookup github.com/none-da/dotfiles/dotgitconfig
+
+#### Bash prompt
+Put these in bashrc
+```sh
+source /jnandakishore/softwares/git-2.5.0/contrib/completion/git-completion.bash
+source /jnandakishore/softwares/git-2.5.0/contrib/completion/git-prompt.sh
+GIT_PS1_SHOWCOLORHINTS=1
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+```
