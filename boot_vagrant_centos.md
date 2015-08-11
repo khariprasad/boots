@@ -3,7 +3,7 @@ vagrant plugin install vagrant-vbguest
 
 ### Install build essentials
 ```sh
-sudo yum -y install gcc make gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel perl-devel nfs-utils gettext enchant glib2-devel libxslt-devel libxml2-devel bzip2-devel
+sudo yum -y install gcc make gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel perl-devel nfs-utils gettext enchant glib2-devel libxslt-devel libxml2-devel bzip2-devel pcre pcre-devel
 ```
 
 ### Intial Vagrantfile
@@ -46,6 +46,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest: 4546, host: 4546
   config.vm.network "forwarded_port", guest: 8080, host: 8080
   config.vm.network "forwarded_port", guest: 29418, host: 29418
+  config.vm.network "forwarded_port", guest: 8888, host: 8888
 
 
   # Create a private network, which allows host-only access to the machine
