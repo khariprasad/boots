@@ -1,10 +1,14 @@
 ### Install vagrant guest additions on the host OS
-vagrant plugin install vagrant-vbguest
+```sh
+  $ vagrant plugin install vagrant-vbguest
+```
 
 ### Turn-off firewall if you have port-forwarding
-sudo chkconfig iptables off 
-sudo chkconfig --del iptables 
-sudo chkconfig --del ip6tables 
+```sh
+  $ sudo chkconfig iptables off 
+  $ sudo chkconfig --del iptables 
+  $ sudo chkconfig --del ip6tables 
+```
 
 ### Install build essentials
 ```sh
